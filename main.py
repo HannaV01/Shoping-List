@@ -34,8 +34,7 @@ def delete_selected():
     try:
         selected = listbox.get(listbox.curselection())
         listbox.delete(tk.ANCHOR)
-        #index = list_data[list_data.index(selected)]
-        #print(index)
+       
         list_data.pop(list_data.index(selected))
     except:
         pass
